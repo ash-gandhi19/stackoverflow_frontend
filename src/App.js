@@ -27,7 +27,7 @@ import UpdateProfile from "./pages/UpdateProfile";
 import ResetPassword from "./pages/ResetPassword";
 
 function App() {
-  axios.defaults.baseURL = "http://localhost:5000";
+  axios.defaults.baseURL = "https://stackoflow-clone.herokuapp.com";
 
   const [isLoggedIn, SetIsLoggedIn] = useState(localStorage.getItem("token"));
   const [isLoading, setIsLoading] = useState(false);
